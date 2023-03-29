@@ -1,0 +1,23 @@
+{
+  "name": "@arshazar/react-custom-hooks",
+  "version": "0.1.0",
+  "description": "custom hooks for react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arshazar/react-custom-hooks.git"
+  },
+  "keywords": [
+    "react",
+    "hooks"
+  ],
+  "author": "arshazar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Arshazar/react-custom-hooks/issues"
+  },
+  "homepage": "https://github.com/Arshazar/react-custom-hooks#readme"
+}

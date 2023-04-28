@@ -21,6 +21,8 @@ npm i @arshazar/react-custom-hooks
 pnpm add @arshazar/react-custom-hooks
 ```
 
+
+
 **Table of Hooks**
 
 <!-- prettier-ignore-start -->
@@ -30,6 +32,9 @@ pnpm add @arshazar/react-custom-hooks
 - [useTimeout](#useTimeout)
 - [useThrottle](#useThrottle)
 
+
+
+
 <!-- prettier-ignore-end -->
 
 ## useUpdate
@@ -37,7 +42,6 @@ pnpm add @arshazar/react-custom-hooks
 usage: `useUpdate(callback, [dependencies])`
 
 ```js
-//
 import { useUpdate } from '@arshazar/react-custom-hooks';
 
 useUpdate(() => {
@@ -50,7 +54,6 @@ useUpdate(() => {
 usage: `useDebounce(value, delay, callback)`
 
 ```js
-//
 import { useDebounce } from '@arshazar/react-custom-hooks';
 
 const debounceValue = useDebounce(value, 1, handleChangeColor);
@@ -61,7 +64,6 @@ const debounceValue = useDebounce(value, 1, handleChangeColor);
 usage: `useTimeout(callback, delay)`
 
 ```js
-//
 import { useTimeout } from '@arshazar/react-custom-hooks';
 
 useTimeout(handleFadeAnimation, 200)
@@ -72,7 +74,6 @@ useTimeout(handleFadeAnimation, 200)
 usage: `useThrottle(callback, period, delay)`
 
 ```js
-//
 import { useThrottle } from '@arshazar/react-custom-hooks';
 
 useThrottle(handleChangeCover, 5000, 10)

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Node 19",
+  "compilerOptions": {
+    "target": "es5",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "commonjs",
+    "declaration": true,
+    "outDir": "lib"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/__tests__/*"]
+}

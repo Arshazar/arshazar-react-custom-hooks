@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 
 let userAgent = "";
 
-const useMobile = (justSmallDevices = false) => {
-  const deviceSize = justSmallDevices ? 480 : 992;
+const useMobile = (smallDevicesOnly = false) => {
+  const deviceSize = smallDevicesOnly ? 480 : 992;
   const [size, setSize] = useState(0);
 
   useEffect(() => {

@@ -7,21 +7,22 @@ Custom hooks for React to make life easy!
 You can easily install React Custom Hooks by yarn, npm or pnpm.
 
 #### yarn
+
 ```bash
 yarn add @arshazar/react-custom-hooks
 ```
 
 #### npm
+
 ```bash
 npm i @arshazar/react-custom-hooks
 ```
 
 #### pnpm
+
 ```bash
 pnpm add @arshazar/react-custom-hooks
 ```
-
-
 
 **Table of Hooks**
 
@@ -31,8 +32,8 @@ pnpm add @arshazar/react-custom-hooks
 - [useDebounce](#useDebounce)
 - [useTimeout](#useTimeout)
 - [useThrottle](#useThrottle)
-
-
+- [useMobile](#useMobile)
+- [useInterval](#useInterval)
 
 
 <!-- prettier-ignore-end -->
@@ -42,11 +43,11 @@ pnpm add @arshazar/react-custom-hooks
 usage: `useUpdate(callback, [dependencies])`
 
 ```js
-import { useUpdate } from '@arshazar/react-custom-hooks';
+import { useUpdate } from "@arshazar/react-custom-hooks";
 
 useUpdate(() => {
-   setSource(images)
-}, [images])
+  setSource(images);
+}, [images]);
 ```
 
 ## useDebounce
@@ -54,7 +55,7 @@ useUpdate(() => {
 usage: `useDebounce(value, delay, callback)`
 
 ```js
-import { useDebounce } from '@arshazar/react-custom-hooks';
+import { useDebounce } from "@arshazar/react-custom-hooks";
 
 const debounceValue = useDebounce(value, 1, handleChangeColor);
 ```
@@ -64,9 +65,9 @@ const debounceValue = useDebounce(value, 1, handleChangeColor);
 usage: `useTimeout(callback, delay)`
 
 ```js
-import { useTimeout } from '@arshazar/react-custom-hooks';
+import { useTimeout } from "@arshazar/react-custom-hooks";
 
-useTimeout(handleFadeAnimation, 200)
+useTimeout(handleFadeAnimation, 200);
 ```
 
 ## useThrottle
@@ -74,7 +75,27 @@ useTimeout(handleFadeAnimation, 200)
 usage: `useThrottle(callback, period, delay)`
 
 ```js
-import { useThrottle } from '@arshazar/react-custom-hooks';
+import { useThrottle } from "@arshazar/react-custom-hooks";
 
-useThrottle(handleChangeCover, 5000, 10)
+useThrottle(handleChangeCover, 5000, 10);
+```
+
+## useMobile
+
+usage: `useMobile(smallDevicesOnly = false)`
+
+```js
+import { useMobile } from "@arshazar/react-custom-hooks";
+
+const isMobile = useMobile();
+```
+
+## useInterval
+
+usage: `useInterval(callback, delay)`
+
+```js
+import { useInterval } from "@arshazar/react-custom-hooks";
+
+useInterval(handleScrollAnimation, 150);
 ```

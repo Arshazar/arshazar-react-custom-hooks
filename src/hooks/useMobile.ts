@@ -4,7 +4,7 @@ let userAgent = "";
 
 const useMobile = (smallDevicesOnly = false) => {
   const deviceSize = smallDevicesOnly ? 480 : 992;
-  const [size, setSize] = useState(0);
+  const [size, setSize] = useState<number>(0);
 
   useEffect(() => {
     onResize();

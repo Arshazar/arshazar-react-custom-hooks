@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 
 const useThrottle = (cb: () => void, period: number, delay: number) => {
-  const [time, setTime] = useState(period);
+  const [time, setTime] = useState<number>(period);
   const interval = useRef<any>(undefined);
 
   useEffect(() => {

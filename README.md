@@ -34,6 +34,10 @@ pnpm add @arshazar/react-custom-hooks
 - [useThrottle](#useThrottle)
 - [useMobile](#useMobile)
 - [useInterval](#useInterval)
+- [useCursorPosition](#useCursorPosition)
+
+
+
 
 
 <!-- prettier-ignore-end -->
@@ -98,4 +102,14 @@ usage: `useInterval(callback, delay)`
 import { useInterval } from "@arshazar/react-custom-hooks";
 
 useInterval(handleScrollAnimation, 150);
+```
+
+## useCursorPosition
+
+usage: `useCursorPosition()`
+
+```js
+import { useCursorPosition } from "@arshazar/react-custom-hooks";
+
+const cursorPosition = useCursorPosition();
 ```

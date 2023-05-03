@@ -1,6 +1,6 @@
 {
   "name": "@arshazar/react-custom-hooks",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "custom hooks for react",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

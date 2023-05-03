@@ -5,4 +5,5 @@ export {
   useTimeout,
   useMobile,
   useInterval,
+  useCursorPosition,
 } from "./hooks";

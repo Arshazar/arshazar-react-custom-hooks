@@ -4,3 +4,4 @@ export * from "./useThrottle";
 export * from "./useDebounce";
 export * from "./useMobile";
 export * from "./useInterval";
+export * from "./useCursorPosition";
